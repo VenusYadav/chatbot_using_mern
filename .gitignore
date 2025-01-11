@@ -1,4 +1,8 @@
 node_modules/
 build/
+<<<<<<< HEAD
 
 .env
+=======
+.env
+>>>>>>> 2760d94a72e1084bb7853b7fc73d67c2394a9068
