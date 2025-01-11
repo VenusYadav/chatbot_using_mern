@@ -1,0 +1,235 @@
+body {
+  background-image: url('https://www.e-spincorp.com/wp-content/uploads/2018/03/CRN_14_chatbot-e1521081812790.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App-header {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.help-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-area-container {
+  display: flex;    
+  margin: 10px 0px;          
+  justify-content: center;    
+  width: 100%;              
+}
+
+.search-area {
+  display: flex;              
+  justify-content: center;   
+  align-items: center;       
+  gap: 10px;                  
+  width: 40%;                
+}
+
+.search-area input {
+  flex: 1;                   
+  padding: 10px;              
+  font-size: 1rem;           
+  border: 1px solid #ccc;     
+  border-radius: 5px;        
+}
+
+.search-area button {
+  flex-shrink: 0;        
+  padding: 10px 20px;         
+  font-size: 1rem;           
+  background-color: #007bff;  
+  color: white;               
+  border: none;              
+  border-radius: 5px;        
+  cursor: pointer;         
+}
+
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 500px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  z-index: 2;
+}
+
+.messages {
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.message {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: rgb(240, 235, 235);
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  color: #333;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.input-area input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-area button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results button {
+  margin: 5px;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.matches-container {
+  position: relative;
+  width: 50%;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #c5eaee;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.search-chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.matches-list {
+  margin-top: 10px;
+}
+
+.match-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.match-item:hover,
+.highlight {
+  background-color: #f9f795;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-area-container {
+  margin-bottom: 20px;
+}
+
+.search-area {
+  display: flex;
+  justify-content: center;
+}
+
+.search-area input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-area button {
+  padding: 10px;
+}
+
+.chat-box {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.input-area button {
+  padding: 10px;
+}
