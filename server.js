@@ -27,14 +27,14 @@ mongoose.connect(process.env.MONGODB_URL,{
 //api routes
 app.use('/api/chat', require('./routes/chatRoutes.js'));
 
-//server frontend in production
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-  
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-}
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
+// For any other routes, serve the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
+
 
 
 // start the server
